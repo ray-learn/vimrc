@@ -18,7 +18,10 @@ syntax on
 
 " [Plug]
 call plug#begin('~/.vim/vim_plugin')	" Specify a directory for plugins
+Plug 'vim-scripts/taglist.vim'
+Plug 'skywind3000/asyncrun.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } 
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " [Key_Mapping]
