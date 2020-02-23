@@ -25,10 +25,15 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } 
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
+Plug 'yggdroot/leaderf'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 " [Key_Mapping]
 let mapleader = ","
+
+" [Tag]
+set tags=./tags;,tags
 
 " [TagList]
 map <leader>tl :TlistToggle<cr>
@@ -51,3 +56,5 @@ au FileType rust nmap gd <Plug>(rust-def)
 au FileType rust nmap gs <Plug>(rust-def-split)
 au FileType rust nmap gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-doc)
+
+" [LeaderF]
