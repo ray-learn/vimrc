@@ -30,7 +30,9 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 " [Key_Mapping]
-let mapleader = ","
+let mapleader=","
+inoremap jk <esc>
+inoremap <esc> <nop>
 
 " [Tag]
 set tags=./tags;,tags
@@ -56,7 +58,3 @@ au FileType rust nmap gd <Plug>(rust-def)
 au FileType rust nmap gs <Plug>(rust-def-split)
 au FileType rust nmap gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-doc)
-
-" [Custom]
-inoremap jk <esc>
-inoremap <esc> <nop>
