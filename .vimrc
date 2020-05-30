@@ -32,9 +32,6 @@ call plug#end()
 let mapleader=","
 inoremap jk <esc>
 inoremap <esc> <nop>
-inoremap <leader><tab> <c-x><c-o>
-inoremap <leader>j <c-n>
-inoremap <leader>k <c-p>
 
 " [Tag]
 set tags=./tags;,tags
